@@ -8,7 +8,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
-
 button, input, textarea {
     font-family: inherit;
 }
@@ -20,13 +19,11 @@ header {
     background-color: #00695c;
     color: #fff;
 }
-
 header h1 {
     font-size: clamp(24px, 5vw, 32px);
     margin: 0;
     font-weight: 700;
 }
-
 header p {
     margin: 5px 0 0;
     font-size: clamp(14px, 3vw, 18px);
@@ -93,7 +90,6 @@ button {
     width: 100%;
     max-width: 300px;
 }
-
 button:hover {
     background-color: #004d40;
 }
@@ -113,25 +109,51 @@ button:hover {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
-
 .attendance-header span {
     font-weight: 700;
     font-size: clamp(16px, 3.5vw, 18px);
 }
 
-/* Student List Styles */
+/* Updated Student List Styles */
 .student-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .student-item {
+    display: flex;
+    align-items: center;
     padding: 10px;
     background-color: #f7f7f7;
     margin-bottom: 5px;
     border-radius: 5px;
     font-size: clamp(14px, 3vw, 16px);
+}
+.serial-number {
+    flex: 0 0 30px;
+    font-weight: bold;
+}
+.student-info {
+    flex: 1;
+    margin-right: 10px;
+}
+.student-item input[type="checkbox"] {
+    display: none;
+}
+.checkbox-label {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d32f2f;  /* Red border for unchecked state */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    background-color: #d32f2f;  /* Red background for unchecked state */
+}
+.student-item input[type="checkbox"]:checked + .checkbox-label {
+    border-color: #00796b;  /* Green border for checked state */
+    background-color: #00796b;  /* Green background for checked state */
 }
 
 /* Report Container Styles */
@@ -139,7 +161,6 @@ button:hover {
     display: none;
     margin-top: 30px;
 }
-
 #reportText {
     width: 100%;
     resize: vertical;
@@ -165,7 +186,6 @@ button:hover {
     width: 100%;
     max-width: 300px;
 }
-
 .save-report-button:hover, .copy-report-button:hover {
     background-color: #00251a;
 }
@@ -176,14 +196,19 @@ button:hover {
         width: 95%;
         padding: 15px;
     }
-
     .attendance-header {
         flex-direction: column;
         align-items: center;
     }
-
     .attendance-header span {
         margin-bottom: 10px;
+    }
+    .student-item {
+        font-size: clamp(12px, 2.5vw, 14px);
+    }
+    .checkbox-label {
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -191,12 +216,20 @@ button:hover {
     body {
         font-size: 14px;
     }
-
     .container {
         padding: 10px;
     }
-
     button, .save-report-button, .copy-report-button {
         padding: 10px 15px;
+    }
+    .student-item {
+        padding: 8px;
+    }
+    .serial-number {
+        flex: 0 0 25px;
+    }
+    .checkbox-label {
+        width: 16px;
+        height: 16px;
     }
 }
