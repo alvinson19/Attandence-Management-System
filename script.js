@@ -53,7 +53,7 @@ var students = [
     { usn: "1MJ23CS052", name: "DISHA V O" },
     { usn: "1MJ23CS053", name: "E VANDANA" },
     { usn: "1MJ23CS054", name: "G M VISHWANATH" },
-    { usn: "LATERAL ENTRY", name: "ABDULAZIZ MOHAMMADYASEEN BEPARI" },
+    { usn: "LATERAL ENTRY", name: "ABDULAZIZ MOHAMMAD YASEEN BEPARI" },
     { usn: "LATERAL ENTRY", name: "ABHISHEK POLICE PATIL" },
     { usn: "LATERAL ENTRY", name: "AKBAR SHANOOR NADAF" },
     { usn: "LATERAL ENTRY", name: "ARPITA SURESH KALLIHAL" },
